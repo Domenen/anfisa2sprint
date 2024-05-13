@@ -133,3 +133,5 @@ dmypy.json
 
 .sqlite3/
 .sqlite/
+
+anfisa_for_friends/static_dev
