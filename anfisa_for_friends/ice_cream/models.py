@@ -32,14 +32,18 @@ class Topping(PublishedModel):
 
 
 class Wrapper(PublishedModel):
-    title = models.CharField(max_length=256, verbose_name='Название')
+    title = models.CharField(
+        max_length=256,
+        verbose_name='Название',
+        help_text='Уникальное название обёртки, не более 256 символов',
+        )
 
     class Meta:
-        verbose_name = 'Обретка'
-        verbose_name_plural = 'Обертки'
+        verbose_name = 'объект «Обёртка»'
+        verbose_name_plural = 'Обёртки'
 
     def __str__(self):
-        return self.title    
+        return self.title
 
 
 class IceCream(PublishedModel):
