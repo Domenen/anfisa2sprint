@@ -134,4 +134,6 @@ dmypy.json
 .sqlite3/
 .sqlite/
 
+db.json
+
 anfisa_for_friends/static_dev/
